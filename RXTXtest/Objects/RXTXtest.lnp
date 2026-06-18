@@ -1,0 +1,10 @@
+--cpu Cortex-M3
+".\objects\test.o"
+".\objects\startup_k1986ve9xi.o"
+".\objects\system_k1986ve9xi.o"
+".\objects\mdr32fxqi_port.o"
+".\objects\mdr32fxqi_power.o"
+".\objects\mdr32fxqi_rst_clk.o"
+--ro-base 0x08000000 --entry 0x08000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\RXTXtest.map" -o .\Objects\RXTXtest.axf

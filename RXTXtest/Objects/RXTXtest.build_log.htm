@@ -1,0 +1,218 @@
+<html>
+<body>
+<pre>
+<h1>�Vision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: �Vision V5.36.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Vitaly Rogozhkin, ., LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.36.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.16
+Assembler:       Armasm.exe V6.16
+Linker/Locator:  ArmLink.exe V6.16
+Library Manager: ArmAr.exe V6.16
+Hex Converter:   FromElf.exe V6.16
+CPU DLL:         SARMCM3.DLL V5.36.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      UL2CM3.DLL V1.164.0.0
+Dialog DLL:      TCM.DLL V1.53.0.0
+ 
+<h2>Project:</h2>
+C:\Users\VitPC\Documents\Stazhirovka SPELS\MDR1211FI\Projects\RXTXtest\RXTXtest.uvprojx
+Project File Date:  02/26/2026
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.16', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'Target 1'
+assembling startup_K1986VE9xI.S...
+test.c(1): warning: In file included from...
+C:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc\MDR32FxQI_port.h(32): warning: In file included from...
+./RTE/Device/K1986VE92xI\MDR32FxQI_config.h(84): warning: In file included from...
+C:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/DeviceSupport/K1986VE9xI/inc\K1986VE9xI.h(82): warning: In file included from...
+C:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/CoreSupport/CM3\core_cm3.h(140): warning: In file included from...
+C:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/CoreSupport/CM3\core_cmInstr.h(448): warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+test.c(1): warning: In file included from...
+C:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc\MDR32FxQI_port.h(32): warning: In file included from...
+./RTE/Device/K1986VE92xI\MDR32FxQI_config.h(84): warning: In file included from...
+C:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/DeviceSupport/K1986VE9xI/inc\K1986VE9xI.h(82): warning: In file included from...
+C:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/CoreSupport/CM3\core_cm3.h(1499): warning: function 'NVIC_SystemReset' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+test.c(58): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  MDR_TIMER1->STATUS &= ~(1 << 1);  // Сброс флага CNT_ARR_EVENT
+                     ~~ ^~~~~~~~~
+test.c(61): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+    MDR_PORTF->RXTX &= ~(1 << 6);
+                    ~~ ^~~~~~~~~
+test.c(74): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  MDR_PORTA->OE &= ~(1 << 6);    // RX - вход
+                ~~ ^~~~~~~~~
+test.c(109): warning: implicit conversion loses integer precision: 'volatile uint32_t' (aka 'volatile unsigned int') to 'unsigned char' [-Wimplicit-int-conversion]
+    temp = MDR_UART1->DR;
+         ~ ~~~~~~~~~~~^~
+test.c(116): warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+7 warnings generated.
+compiling test.c...
+C:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/src/MDR32FxQI_port.c(23): warning: In file included from...
+C:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc\MDR32FxQI_port.h(32): warning: In file included from...
+./RTE/Device/K1986VE92xI\MDR32FxQI_config.h(84): warning: In file included from...
+C:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/DeviceSupport/K1986VE9xI/inc\K1986VE9xI.h(82): warning: In file included from...
+C:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/CoreSupport/CM3\core_cm3.h(140): warning: In file included from...
+C:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/CoreSupport/CM3\core_cmInstr.h(448): warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+C:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/src/MDR32FxQI_port.c(23): warning: In file included from...
+C:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc\MDR32FxQI_port.h(32): warning: In file included from...
+./RTE/Device/K1986VE92xI\MDR32FxQI_config.h(84): warning: In file included from...
+C:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/DeviceSupport/K1986VE9xI/inc\K1986VE9xI.h(82): warning: In file included from...
+C:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/CoreSupport/CM3\core_cm3.h(1499): warning: function 'NVIC_SystemReset' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+C:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/src/MDR32FxQI_port.c(123): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+            tmpreg_OE     = (tmpreg_OE     & ~mask_s) | (PORT_InitStruct->PORT_OE        <<  pos);
+                                                      ~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+C:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/src/MDR32FxQI_port.c(124): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+            tmpreg_FUNC   = (tmpreg_FUNC   & ~mask_l) | (PORT_InitStruct->PORT_FUNC      << (pos * 2));
+                                                      ~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+C:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/src/MDR32FxQI_port.c(125): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+            tmpreg_ANALOG = (tmpreg_ANALOG & ~mask_s) | (PORT_InitStruct->PORT_MODE      <<  pos);
+                                                      ~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+C:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/src/MDR32FxQI_port.c(127): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                                                      | (PORT_InitStruct->PORT_PULL_DOWN <<  pos);
+                                                      ~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+C:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/src/MDR32FxQI_port.c(126): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+            tmpreg_PULL   = (tmpreg_PULL   & ~mask_d) | (PORT_InitStruct->PORT_PULL_UP   << (pos + 16))
+                                                      ~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+C:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/src/MDR32FxQI_port.c(129): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                                                      | (PORT_InitStruct->PORT_PD        <<  pos);
+                                                      ~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+C:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/src/MDR32FxQI_port.c(128): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+            tmpreg_PD     = (tmpreg_PD     & ~mask_d) | (PORT_InitStruct->PORT_PD_SHM    << (pos + 16))
+                                                      ~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+C:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/src/MDR32FxQI_port.c(130): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+            tmpreg_PWR    = (tmpreg_PWR    & ~mask_l) | (PORT_InitStruct->PORT_SPEED     << (pos * 2));
+                                                      ~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+C:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/src/MDR32FxQI_port.c(131): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+            tmpreg_GFEN   = (tmpreg_GFEN   & ~mask_s) | (PORT_InitStruct->PORT_GFEN      <<  pos);
+                                                      ~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+C:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/src/MDR32FxQI_port.c(23): warning: In file included from...
+C:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc\MDR32FxQI_port.h(200): warning: padding size of 'PORT_InitTypeDef' with 1 byte to alignment boundary [-Wpadded]
+typedef struct
+        ^
+12 warnings generated.
+compiling MDR32FxQI_port.c...
+RTE/Device/K1986VE92xI/system_K1986VE9xI.c(18): warning: In file included from...
+C:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/DeviceSupport/K1986VE9xI/inc\K1986VE9xI.h(82): warning: In file included from...
+C:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/CoreSupport/CM3\core_cm3.h(140): warning: In file included from...
+C:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/CoreSupport/CM3\core_cmInstr.h(448): warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+RTE/Device/K1986VE92xI/system_K1986VE9xI.c(18): warning: In file included from...
+C:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/DeviceSupport/K1986VE9xI/inc\K1986VE9xI.h(82): warning: In file included from...
+C:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/CoreSupport/CM3\core_cm3.h(1499): warning: function 'NVIC_SystemReset' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+RTE/Device/K1986VE92xI/system_K1986VE9xI.c(63): warning: no previous extern declaration for non-static variable 'EEPROM_FACTORY_READ_WORD_FUNC' [-Wmissing-variable-declarations]
+const uint32_t EEPROM_FACTORY_READ_WORD_FUNC[EEPROM_FACTORY_READ_WORD_FUNC_SIZE] = {0x4602B510,
+               ^
+RTE/Device/K1986VE92xI/system_K1986VE9xI.c(63): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+const uint32_t EEPROM_FACTORY_READ_WORD_FUNC[EEPROM_FACTORY_READ_WORD_FUNC_SIZE] = {0x4602B510,
+      ^
+3 warnings generated.
+compiling system_K1986VE9xI.c...
+C:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/src/MDR32FxQI_power.c(23): warning: In file included from...
+C:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc\MDR32FxQI_power.h(32): warning: In file included from...
+./RTE/Device/K1986VE92xI\MDR32FxQI_config.h(84): warning: In file included from...
+C:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/DeviceSupport/K1986VE9xI/inc\K1986VE9xI.h(82): warning: In file included from...
+C:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/CoreSupport/CM3\core_cm3.h(140): warning: In file included from...
+C:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/CoreSupport/CM3\core_cmInstr.h(448): warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+C:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/src/MDR32FxQI_power.c(23): warning: In file included from...
+C:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc\MDR32FxQI_power.h(32): warning: In file included from...
+./RTE/Device/K1986VE92xI\MDR32FxQI_config.h(84): warning: In file included from...
+C:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/DeviceSupport/K1986VE9xI/inc\K1986VE9xI.h(82): warning: In file included from...
+C:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/CoreSupport/CM3\core_cm3.h(1499): warning: function 'NVIC_SystemReset' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+2 warnings generated.
+compiling MDR32FxQI_power.c...
+C:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/src/MDR32FxQI_rst_clk.c(23): warning: In file included from...
+C:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc\MDR32FxQI_rst_clk.h(32): warning: In file included from...
+./RTE/Device/K1986VE92xI\MDR32FxQI_config.h(84): warning: In file included from...
+C:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/DeviceSupport/K1986VE9xI/inc\K1986VE9xI.h(82): warning: In file included from...
+C:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/CoreSupport/CM3\core_cm3.h(140): warning: In file included from...
+C:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/CoreSupport/CM3\core_cmInstr.h(448): warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+  return(result);
+  ~~~~~~ ^~~~~~
+C:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/src/MDR32FxQI_rst_clk.c(23): warning: In file included from...
+C:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc\MDR32FxQI_rst_clk.h(32): warning: In file included from...
+./RTE/Device/K1986VE92xI\MDR32FxQI_config.h(84): warning: In file included from...
+C:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/DeviceSupport/K1986VE9xI/inc\K1986VE9xI.h(82): warning: In file included from...
+C:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/CoreSupport/CM3\core_cm3.h(1499): warning: function 'NVIC_SystemReset' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+C:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/src/MDR32FxQI_rst_clk.c(230): warning: enumeration value 'RST_CLK_HSE_OFF' not explicitly handled in switch [-Wswitch-enum]
+    switch (RST_CLK_HSE)
+            ^
+C:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/src/MDR32FxQI_rst_clk.c(355): warning: enumeration value 'RST_CLK_LSE_OFF' not explicitly handled in switch [-Wswitch-enum]
+    switch (RST_CLK_LSE)
+            ^
+4 warnings generated.
+compiling MDR32FxQI_rst_clk.c...
+linking...
+Program Size: Code=1140 RO-data=288 RW-data=4 ZI-data=1632  
+".\Objects\RXTXtest.axf" - 0 Error(s), 28 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Milandr
+                
+                Milandr.MDR32FxQI.1.3.2
+                Milandr MDR32FxQI Series Device Support, Drivers and Examples
+   * Component: Startup Version: 2.2.0i
+   * Component: PORT Version: 2.2.0i
+   * Component: POWER Version: 2.2.0i
+   * Component: RST_CLK Version: 2.2.0i
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\Device\K1986VE92xI
+  .\RTE\_Target_1
+  C:\Users\VitPC\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.3.2\Libraries\CMSIS\MDR32FxQI\CoreSupport\CM3
+  C:\Users\VitPC\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.3.2\Libraries\CMSIS\MDR32FxQI\DeviceSupport\K1986VE9xI\inc
+  C:\Users\VitPC\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: Milandr::Device:Startup:2.2.0i
+      Source file:   Libraries\CMSIS\MDR32FxQI\DeviceSupport\K1986VE9xI\startup\arm\startup_K1986VE9xI.S
+      Source file:   Libraries\CMSIS\MDR32FxQI\DeviceSupport\K1986VE9xI\startup\system_K1986VE9xI.c
+      Include file:  Libraries\CMSIS\MDR32FxQI\DeviceSupport\K1986VE9xI\startup\system_K1986VE9xI.h
+      Include file:  Libraries\CMSIS\MDR32FxQI\DeviceSupport\K1986VE9xI\inc\K1986VE9xI.h
+      Include file:  Libraries\CMSIS\MDR32FxQI\CoreSupport\CM3\core_cm3.h
+      Include file:  Libraries\SPL\MDR32FxQI\inc\IRQ_Handler_Template\K1986VE9xI_IT.h
+      Source file:   Libraries\SPL\MDR32FxQI\src\IRQ_Handler_Template\K1986VE9xI_IT.c
+      Include file:  Libraries\SPL\MDR32FxQI\MDR32FxQI_config.h
+
+   * Component: Milandr::Drivers:PORT:2.2.0i
+      Include file:  Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_port.h
+      Source file:   Libraries\SPL\MDR32FxQI\src\MDR32FxQI_port.c
+
+   * Component: Milandr::Drivers:POWER:2.2.0i
+      Source file:   Libraries\SPL\MDR32FxQI\src\MDR32FxQI_power.c
+      Include file:  Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_power.h
+
+   * Component: Milandr::Drivers:RST_CLK:2.2.0i
+      Source file:   Libraries\SPL\MDR32FxQI\src\MDR32FxQI_rst_clk.c
+      Include file:  Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_rst_clk.h
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>

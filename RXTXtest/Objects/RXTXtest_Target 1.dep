@@ -1,0 +1,57 @@
+Dependencies for Project 'RXTXtest', Target 'Target 1': (DO NOT MODIFY !)
+CompilerVersion: 6160000::V6.16::ARMCLANG
+F (.\test.c)(0x69B29705)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/Device/K1986VE92xI-I./RTE/_Target_1-IC:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/CoreSupport/CM3-IC:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/DeviceSupport/K1986VE9xI/inc-IC:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc-D__UVISION_VERSION="536" -D_RTE_ -D_RTE_-o ./objects/test.o -MD)
+I (C:\Users\VitPC\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_port.h)(0x67E63F1E)
+I (RTE\Device\K1986VE92xI\MDR32FxQI_config.h)(0x67E63F1E)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x60354E20)
+I (RTE\_Target_1\RTE_Components.h)(0x69A06B9B)
+I (C:\Users\VitPC\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.3.2\Libraries\CMSIS\MDR32FxQI\DeviceSupport\K1986VE9xI\inc\K1986VE9xI.h)(0x67E63F1E)
+I (C:\Users\VitPC\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.3.2\Libraries\CMSIS\MDR32FxQI\CoreSupport\CM3\core_cm3.h)(0x67E63F1E)
+I (C:\Users\VitPC\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.3.2\Libraries\CMSIS\MDR32FxQI\CoreSupport\CM3\core_cmInstr.h)(0x67E63F1E)
+I (C:\Users\VitPC\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.3.2\Libraries\CMSIS\MDR32FxQI\CoreSupport\CM3\core_cmFunc.h)(0x67E63F1E)
+I (RTE\Device\K1986VE92xI\system_K1986VE9xI.h)(0x67E63F1E)
+I (C:\Users\VitPC\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_rst_clk.h)(0x67E63F1E)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x60354E20)
+F (RTE\Device\K1986VE92xI\K1986VE9xI.sct)(0x67E63F1E)()
+F (RTE\Device\K1986VE92xI\MDR32FxQI_config.h)(0x67E63F1E)()
+F (RTE\Device\K1986VE92xI\startup_K1986VE9xI.S)(0x67E63F1E)(--target=arm-arm-none-eabi -mcpu=cortex-m3 -masm=auto -c-gdwarf-4 -D__EVAL-I./RTE/Device/K1986VE92xI-I./RTE/_Target_1-IC:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/CoreSupport/CM3-IC:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/DeviceSupport/K1986VE9xI/inc-IC:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc-D__UVISION_VERSION=536 -D_RTE_ -D_RTE_-o ./objects/startup_k1986ve9xi.o)
+F (RTE\Device\K1986VE92xI\system_K1986VE9xI.c)(0x67E63F1E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/Device/K1986VE92xI-I./RTE/_Target_1-IC:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/CoreSupport/CM3-IC:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/DeviceSupport/K1986VE9xI/inc-IC:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc-D__UVISION_VERSION="536" -D_RTE_ -D_RTE_-o ./objects/system_k1986ve9xi.o -MD)
+I (C:\Users\VitPC\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.3.2\Libraries\CMSIS\MDR32FxQI\DeviceSupport\K1986VE9xI\inc\K1986VE9xI.h)(0x67E63F1E)
+I (RTE\Device\K1986VE92xI\MDR32FxQI_config.h)(0x67E63F1E)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x60354E20)
+I (RTE\_Target_1\RTE_Components.h)(0x69A06B9B)
+I (C:\Users\VitPC\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.3.2\Libraries\CMSIS\MDR32FxQI\CoreSupport\CM3\core_cm3.h)(0x67E63F1E)
+I (C:\Users\VitPC\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.3.2\Libraries\CMSIS\MDR32FxQI\CoreSupport\CM3\core_cmInstr.h)(0x67E63F1E)
+I (C:\Users\VitPC\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.3.2\Libraries\CMSIS\MDR32FxQI\CoreSupport\CM3\core_cmFunc.h)(0x67E63F1E)
+I (RTE\Device\K1986VE92xI\system_K1986VE9xI.h)(0x67E63F1E)
+F (RTE\Device\K1986VE92xI\system_K1986VE9xI.h)(0x67E63F1E)()
+F (C:\Users\VitPC\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\src\MDR32FxQI_port.c)(0x67E63F20)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/Device/K1986VE92xI-I./RTE/_Target_1-IC:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/CoreSupport/CM3-IC:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/DeviceSupport/K1986VE9xI/inc-IC:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc-D__UVISION_VERSION="536" -D_RTE_ -D_RTE_-o ./objects/mdr32fxqi_port.o -MD)
+I (C:\Users\VitPC\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_port.h)(0x67E63F1E)
+I (RTE\Device\K1986VE92xI\MDR32FxQI_config.h)(0x67E63F1E)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x60354E20)
+I (RTE\_Target_1\RTE_Components.h)(0x69A06B9B)
+I (C:\Users\VitPC\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.3.2\Libraries\CMSIS\MDR32FxQI\DeviceSupport\K1986VE9xI\inc\K1986VE9xI.h)(0x67E63F1E)
+I (C:\Users\VitPC\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.3.2\Libraries\CMSIS\MDR32FxQI\CoreSupport\CM3\core_cm3.h)(0x67E63F1E)
+I (C:\Users\VitPC\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.3.2\Libraries\CMSIS\MDR32FxQI\CoreSupport\CM3\core_cmInstr.h)(0x67E63F1E)
+I (C:\Users\VitPC\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.3.2\Libraries\CMSIS\MDR32FxQI\CoreSupport\CM3\core_cmFunc.h)(0x67E63F1E)
+I (RTE\Device\K1986VE92xI\system_K1986VE9xI.h)(0x67E63F1E)
+F (C:\Users\VitPC\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\src\MDR32FxQI_power.c)(0x67E63F20)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/Device/K1986VE92xI-I./RTE/_Target_1-IC:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/CoreSupport/CM3-IC:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/DeviceSupport/K1986VE9xI/inc-IC:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc-D__UVISION_VERSION="536" -D_RTE_ -D_RTE_-o ./objects/mdr32fxqi_power.o -MD)
+I (C:\Users\VitPC\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_power.h)(0x67E63F1E)
+I (RTE\Device\K1986VE92xI\MDR32FxQI_config.h)(0x67E63F1E)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x60354E20)
+I (RTE\_Target_1\RTE_Components.h)(0x69A06B9B)
+I (C:\Users\VitPC\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.3.2\Libraries\CMSIS\MDR32FxQI\DeviceSupport\K1986VE9xI\inc\K1986VE9xI.h)(0x67E63F1E)
+I (C:\Users\VitPC\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.3.2\Libraries\CMSIS\MDR32FxQI\CoreSupport\CM3\core_cm3.h)(0x67E63F1E)
+I (C:\Users\VitPC\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.3.2\Libraries\CMSIS\MDR32FxQI\CoreSupport\CM3\core_cmInstr.h)(0x67E63F1E)
+I (C:\Users\VitPC\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.3.2\Libraries\CMSIS\MDR32FxQI\CoreSupport\CM3\core_cmFunc.h)(0x67E63F1E)
+I (RTE\Device\K1986VE92xI\system_K1986VE9xI.h)(0x67E63F1E)
+F (C:\Users\VitPC\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\src\MDR32FxQI_rst_clk.c)(0x67E63F20)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/Device/K1986VE92xI-I./RTE/_Target_1-IC:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/CoreSupport/CM3-IC:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/CMSIS/MDR32FxQI/DeviceSupport/K1986VE9xI/inc-IC:/Users/VitPC/AppData/Local/Arm/Packs/Milandr/MDR32FxQI/1.3.2/Libraries/SPL/MDR32FxQI/inc-D__UVISION_VERSION="536" -D_RTE_ -D_RTE_-o ./objects/mdr32fxqi_rst_clk.o -MD)
+I (C:\Users\VitPC\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_rst_clk.h)(0x67E63F1E)
+I (RTE\Device\K1986VE92xI\MDR32FxQI_config.h)(0x67E63F1E)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x60354E20)
+I (RTE\_Target_1\RTE_Components.h)(0x69A06B9B)
+I (C:\Users\VitPC\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.3.2\Libraries\CMSIS\MDR32FxQI\DeviceSupport\K1986VE9xI\inc\K1986VE9xI.h)(0x67E63F1E)
+I (C:\Users\VitPC\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.3.2\Libraries\CMSIS\MDR32FxQI\CoreSupport\CM3\core_cm3.h)(0x67E63F1E)
+I (C:\Users\VitPC\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.3.2\Libraries\CMSIS\MDR32FxQI\CoreSupport\CM3\core_cmInstr.h)(0x67E63F1E)
+I (C:\Users\VitPC\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.3.2\Libraries\CMSIS\MDR32FxQI\CoreSupport\CM3\core_cmFunc.h)(0x67E63F1E)
+I (RTE\Device\K1986VE92xI\system_K1986VE9xI.h)(0x67E63F1E)

@@ -1,0 +1,170 @@
+<html>
+<body>
+<pre>
+<h1>�Vision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: �Vision V5.36.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Vitaly Rogozhkin, ., LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.36.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.16
+Assembler:       Armasm.exe V6.16
+Linker/Locator:  ArmLink.exe V6.16
+Library Manager: ArmAr.exe V6.16
+Hex Converter:   FromElf.exe V6.16
+CPU DLL:         SARMCM3.DLL V5.36.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.9.0
+Dialog DLL:      TCM.DLL V1.53.0.0
+ 
+<h2>Project:</h2>
+C:\Users\VitPC\Documents\Stazhirovka SPELS\MDR1211FI\Projects\I2C\project.uvprojx
+Project File Date:  03/19/2026
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.16', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'Target 1'
+main.c(12): warning: no previous extern declaration for non-static variable 'current_yaw' [-Wmissing-variable-declarations]
+float current_yaw = 0.0f; //Никита добавил
+      ^
+main.c(12): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+float current_yaw = 0.0f; //Никита добавил
+^
+main.c(71): warning: no previous extern declaration for non-static variable 'rx_index' [-Wmissing-variable-declarations]
+volatile uint8_t rx_index = 0;
+                 ^
+main.c(71): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+volatile uint8_t rx_index = 0;
+         ^
+main.c(72): warning: no previous extern declaration for non-static variable 'string_received' [-Wmissing-variable-declarations]
+volatile uint8_t string_received = 0;  // флаг готовности строки
+                 ^
+main.c(72): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+volatile uint8_t string_received = 0;  // флаг готовности строки
+         ^
+main.c(179): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+        MDR_I2C->TXD = (addr << 1);
+                     ~  ~~~~~^~~~
+main.c(204): warning: implicit conversion loses integer precision: 'int' to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+        uint8_t addr_with_rw = (addr << 1) | 0; // бит записи
+                ~~~~~~~~~~~~   ~~~~~~~~~~~~^~~
+main.c(233): warning: implicit conversion loses integer precision: 'int' to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+        addr_with_rw = (addr << 1) | 1; // адрес с битом чтения
+                     ~ ~~~~~~~~~~~~^~~
+main.c(260): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+    MDR_I2C->TXD = (addr << 1);
+                 ~  ~~~~~^~~~
+main.c(336): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        MDR_PORTA->OE &= ~(1 << 6);        // RX - вход
+                      ~~ ^~~~~~~~~
+main.c(392): warning: implicit conversion changes signedness: 'int' to 'char' [-Wsign-conversion]
+                        buffer[i++] = (num % 10) + '0';
+                                    ~ ~~~~~~~~~~~^~~~~
+main.c(433): warning: implicit conversion loses integer precision: 'volatile uint32_t' (aka 'volatile unsigned int') to 'char' [-Wimplicit-int-conversion]
+                c = MDR_UART1->DR;
+                  ~ ~~~~~~~~~~~^~
+main.c(508): warning: unused variable 'arg' [-Wunused-variable]
+                        double arg = atof(arg_str);
+                               ^
+main.c(515): warning: unused variable 'arg' [-Wunused-variable]
+                        double arg = atof(arg_str);
+                               ^
+main.c(561): warning: implicit conversion loses integer precision: 'int' to 'int16_t' (aka 'short') [-Wimplicit-int-conversion]
+        int16_t data_raw = ((int16_t)(*data_h) << 8) | (*data_l);
+                ~~~~~~~~   ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+main.c(565): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+        uint8_t range_bits = (cfg & 0b00011000) >> 3 ;
+                                    ^
+main.c(581): warning: implicit conversion increases floating-point precision: 'float' to 'double' [-Wdouble-promotion]
+    if (fabs(gz_dps) > 0.5f) { // чтобы не плыло в покое
+        ~~~~ ^~~~~~
+main.c(581): warning: implicit conversion increases floating-point precision: 'float' to 'double' [-Wdouble-promotion]
+    if (fabs(gz_dps) > 0.5f) { // чтобы не плыло в покое
+                     ~ ^~~~
+main.c(595): warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+main.c(70): warning: no previous extern declaration for non-static variable 'rx_buffer' [-Wmissing-variable-declarations]
+char rx_buffer[RX_BUFFER_SIZE];
+     ^
+main.c(70): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+char rx_buffer[RX_BUFFER_SIZE];
+^
+18 warnings generated.
+compiling main.c...
+linking...
+Program Size: Code=14232 RO-data=732 RW-data=8 ZI-data=1672  
+".\Objects\project.axf" - 0 Error(s), 18 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.8.0.pack
+                ARM.CMSIS.5.8.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.5.0
+
+Package Vendor: Milandr
+                
+                Milandr.MDR32FxQI.1.3.2
+                Milandr MDR32FxQI Series Device Support, Drivers and Examples
+   * Component: Startup Version: 2.2.0i
+   * Component: I2C Version: 2.2.0i
+   * Component: PORT Version: 2.2.0i
+   * Component: POWER Version: 2.2.0i
+   * Component: RST_CLK Version: 2.2.0i
+   * Component: TIMER Version: 2.2.0i
+   * Component: UART Version: 2.2.0i
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\Device\MDR32F9Q2I
+  .\RTE\_Target_1
+  C:\Users\VitPC\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include
+  C:\Users\VitPC\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.3.2\Libraries\CMSIS\MDR32FxQI\CoreSupport\CM3
+  C:\Users\VitPC\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.3.2\Libraries\CMSIS\MDR32FxQI\DeviceSupport\MDR32F9Q2I\inc
+  C:\Users\VitPC\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.5.0
+
+   * Component: Milandr::Device:Startup:2.2.0i
+      Include file:  Libraries\SPL\MDR32FxQI\inc\IRQ_Handler_Template\MDR32F9Q2I_IT.h
+      Include file:  Libraries\CMSIS\MDR32FxQI\CoreSupport\CM3\core_cm3.h
+      Include file:  Libraries\SPL\MDR32FxQI\MDR32FxQI_config.h
+      Source file:   Libraries\SPL\MDR32FxQI\src\IRQ_Handler_Template\MDR32F9Q2I_IT.c
+      Include file:  Libraries\CMSIS\MDR32FxQI\DeviceSupport\MDR32F9Q2I\startup\system_MDR32F9Q2I.h
+      Source file:   Libraries\CMSIS\MDR32FxQI\DeviceSupport\MDR32F9Q2I\startup\arm\startup_MDR32F9Q2I.S
+      Include file:  Libraries\CMSIS\MDR32FxQI\DeviceSupport\MDR32F9Q2I\inc\MDR32F9Q2I.h
+      Source file:   Libraries\CMSIS\MDR32FxQI\DeviceSupport\MDR32F9Q2I\startup\system_MDR32F9Q2I.c
+
+   * Component: Milandr::Drivers:I2C:2.2.0i
+      Include file:  Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_i2c.h
+      Source file:   Libraries\SPL\MDR32FxQI\src\MDR32FxQI_i2c.c
+
+   * Component: Milandr::Drivers:PORT:2.2.0i
+      Include file:  Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_port.h
+      Source file:   Libraries\SPL\MDR32FxQI\src\MDR32FxQI_port.c
+
+   * Component: Milandr::Drivers:POWER:2.2.0i
+      Source file:   Libraries\SPL\MDR32FxQI\src\MDR32FxQI_power.c
+      Include file:  Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_power.h
+
+   * Component: Milandr::Drivers:RST_CLK:2.2.0i
+      Source file:   Libraries\SPL\MDR32FxQI\src\MDR32FxQI_rst_clk.c
+      Include file:  Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_rst_clk.h
+
+   * Component: Milandr::Drivers:TIMER:2.2.0i
+      Include file:  Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_timer.h
+      Source file:   Libraries\SPL\MDR32FxQI\src\MDR32FxQI_timer.c
+
+   * Component: Milandr::Drivers:UART:2.2.0i
+      Source file:   Libraries\SPL\MDR32FxQI\src\MDR32FxQI_uart.c
+      Include file:  Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_uart.h
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>

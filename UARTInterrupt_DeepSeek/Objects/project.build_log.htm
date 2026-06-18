@@ -1,0 +1,114 @@
+<html>
+<body>
+<pre>
+<h1>�Vision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: �Vision V5.36.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Vitaly Rogozhkin, ., LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.36.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.16
+Assembler:       Armasm.exe V6.16
+Linker/Locator:  ArmLink.exe V6.16
+Library Manager: ArmAr.exe V6.16
+Hex Converter:   FromElf.exe V6.16
+CPU DLL:         SARMCM3.DLL V5.36.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.9.0
+Dialog DLL:      TCM.DLL V1.53.0.0
+ 
+<h2>Project:</h2>
+C:\Users\VitPC\Documents\Stazhirovka SPELS\MDR1211FI\Projects\UARTInterrupt_DeepSeek\project.uvprojx
+Project File Date:  03/12/2026
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.16', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'Target 1'
+main.c(58): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  MDR_TIMER1->STATUS &= ~(1 << 1);  // Сброс флага CNT_ARR_EVENT
+                     ~~ ^~~~~~~~~
+main.c(61): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+    MDR_PORTF->RXTX &= ~(1 << 6);
+                    ~~ ^~~~~~~~~
+main.c(74): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  MDR_PORTA->OE &= ~(1 << 6);    // RX - вход
+                ~~ ^~~~~~~~~
+main.c(104): warning: implicit conversion loses integer precision: 'volatile uint32_t' (aka 'volatile unsigned int') to 'unsigned char' [-Wimplicit-int-conversion]
+    temp = MDR_UART1->DR;
+         ~ ~~~~~~~~~~~^~
+main.c(111): warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+5 warnings generated.
+compiling main.c...
+linking...
+Program Size: Code=980 RO-data=224 RW-data=4 ZI-data=1632  
+".\Objects\project.axf" - 0 Error(s), 5 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.8.0.pack
+                ARM.CMSIS.5.8.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.5.0
+
+Package Vendor: Milandr
+                
+                Milandr.MDR32FxQI.1.3.2
+                Milandr MDR32FxQI Series Device Support, Drivers and Examples
+   * Component: Startup Version: 2.2.0i
+   * Component: PORT Version: 2.2.0i
+   * Component: POWER Version: 2.2.0i
+   * Component: RST_CLK Version: 2.2.0i
+   * Component: TIMER Version: 2.2.0i
+   * Component: UART Version: 2.2.0i
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\Device\MDR32F9Q2I
+  .\RTE\_Target_1
+  C:\Users\VitPC\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include
+  C:\Users\VitPC\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.3.2\Libraries\CMSIS\MDR32FxQI\CoreSupport\CM3
+  C:\Users\VitPC\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.3.2\Libraries\CMSIS\MDR32FxQI\DeviceSupport\MDR32F9Q2I\inc
+  C:\Users\VitPC\AppData\Local\Arm\Packs\Milandr\MDR32FxQI\1.3.2\Libraries\SPL\MDR32FxQI\inc
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.5.0
+
+   * Component: Milandr::Device:Startup:2.2.0i
+      Source file:   Libraries\CMSIS\MDR32FxQI\DeviceSupport\MDR32F9Q2I\startup\arm\startup_MDR32F9Q2I.S
+      Include file:  Libraries\CMSIS\MDR32FxQI\DeviceSupport\MDR32F9Q2I\inc\MDR32F9Q2I.h
+      Include file:  Libraries\SPL\MDR32FxQI\MDR32FxQI_config.h
+      Include file:  Libraries\SPL\MDR32FxQI\inc\IRQ_Handler_Template\MDR32F9Q2I_IT.h
+      Include file:  Libraries\CMSIS\MDR32FxQI\DeviceSupport\MDR32F9Q2I\startup\system_MDR32F9Q2I.h
+      Source file:   Libraries\CMSIS\MDR32FxQI\DeviceSupport\MDR32F9Q2I\startup\system_MDR32F9Q2I.c
+      Source file:   Libraries\SPL\MDR32FxQI\src\IRQ_Handler_Template\MDR32F9Q2I_IT.c
+      Include file:  Libraries\CMSIS\MDR32FxQI\CoreSupport\CM3\core_cm3.h
+
+   * Component: Milandr::Drivers:PORT:2.2.0i
+      Include file:  Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_port.h
+      Source file:   Libraries\SPL\MDR32FxQI\src\MDR32FxQI_port.c
+
+   * Component: Milandr::Drivers:POWER:2.2.0i
+      Source file:   Libraries\SPL\MDR32FxQI\src\MDR32FxQI_power.c
+      Include file:  Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_power.h
+
+   * Component: Milandr::Drivers:RST_CLK:2.2.0i
+      Include file:  Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_rst_clk.h
+      Source file:   Libraries\SPL\MDR32FxQI\src\MDR32FxQI_rst_clk.c
+
+   * Component: Milandr::Drivers:TIMER:2.2.0i
+      Include file:  Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_timer.h
+      Source file:   Libraries\SPL\MDR32FxQI\src\MDR32FxQI_timer.c
+
+   * Component: Milandr::Drivers:UART:2.2.0i
+      Include file:  Libraries\SPL\MDR32FxQI\inc\MDR32FxQI_uart.h
+      Source file:   Libraries\SPL\MDR32FxQI\src\MDR32FxQI_uart.c
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
